@@ -1,34 +1,71 @@
 
-# Sistema de Gesto para Emergência em Apagões
+# 🖐️ Sistema de Detecção de Gesto para Situações de Emergência
 
-## 💡 Problema
-Durante quedas de energia, a comunicação pode ser comprometida. Pessoas em hospitais, residências ou locais escuros enfrentam dificuldade para pedir ajuda.
+## 📘 Descrição do Problema
+Durante quedas de energia, a comunicação se torna limitada. Em locais como hospitais, residências com idosos ou pessoas com deficiência, pode ser difícil pedir ajuda. Pensando nisso, o projeto propõe uma forma alternativa e acessível de sinalizar uma emergência com um simples gesto.
 
-## 🧠 Solução
-Desenvolvemos uma solução com Python e MediaPipe que detecta gestos com a mão (mão aberta) para ativar um alerta automático. O sistema simula um acionamento de emergência, funcionando mesmo em condições de baixa visibilidade.
+## 💡 Visão Geral da Solução
+Este projeto utiliza **Python**, **OpenCV**, **MediaPipe** e **Pygame** para detectar um gesto de "mão aberta" pela webcam. Ao reconhecer o gesto, o sistema:
+- Exibe uma mensagem de alerta visual na tela
+- Emite um som de alarme (`alerta.mp3`)
+- Funciona offline, sem necessidade de conexão com a internet
+- Pode ser executado até com a câmera do celular (via Iriun Webcam)
 
-## 🛠️ Tecnologias Utilizadas
-- Python 3
-- MediaPipe
-- OpenCV
-- Pygame (para alerta sonoro)
+## ⚙️ Instruções de Execução
 
-## 🚀 Como Executar
-1. Instale as dependências:
-   ```
-   pip install mediapipe opencv-python pygame
-   ```
-2. Adicione um arquivo de áudio com nome `alerta.mp3` na mesma pasta do código.
-3. Execute o sistema:
-   ```
-   python main.py
-   ```
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/pedromourabarros/gs-IOT.git
+```
 
-> Pressione ESC para sair do programa.
+### 2. Criar ambiente virtual e ativar
+```bash
+python -m venv venv
+.venv\Scriptsactivate
+```
 
-## 🎥 Vídeo demonstrativo
-[(https://youtu.be/ma0CJU2U-bs)]
+### 3. Instalar dependências
+```bash
+pip install mediapipe opencv-python pygame
+```
+
+### 4. Executar o sistema
+```bash
+python main.py
+```
+
+> ⚠️ Certifique-se de que o arquivo `alerta.mp3` esteja na mesma pasta do `main.py`.
+
+---
+
+## 🎥 Vídeo Demonstrativo
+
+🔗 [Clique aqui para assistir no YouTube](https://www.youtube.com/SEU-LINK-AQUI)
+
+---
+
+## 🖼️ Figura de Funcionamento
+
+Abaixo, uma captura do funcionamento do sistema:
+
+![demonstração](https://github.com/pedromourabarros/gs-IOT/raw/main/image.png)
+
+---
+
+## 💻 Código Fonte
+
+O código principal está no arquivo [`main.py`](./main.py), responsável por:
+
+- Capturar vídeo da webcam
+- Processar com MediaPipe para reconhecer a mão
+- Detectar o gesto de emergência (mão aberta com 4 ou mais dedos)
+- Exibir mensagem de alerta e tocar som via pygame
+
+---
 
 ## 👥 Integrantes
+
 - Pedro Moura Barros – RM550260  
 - Rodrigo Fernandes dos Santos – RM98896  
+
+---
