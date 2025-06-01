@@ -27,7 +27,7 @@ Desenvolvemos uma solução com Python e MediaPipe que detecta gestos com a mão
 > Pressione ESC para sair do programa.
 
 ## 🎥 Vídeo demonstrativo
-[🔗 Inserir link do vídeo aqui após gravação]
+[(https://youtu.be/ma0CJU2U-bs)]
 
 ## 👥 Integrantes
 - Pedro Moura Barros – RM550260  
