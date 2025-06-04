@@ -40,7 +40,7 @@ python main.py
 
 ## 🎥 Vídeo Demonstrativo
 
-🔗 [Clique aqui para assistir no YouTube](https://www.youtube.com/SEU-LINK-AQUI)
+🔗 [Clique aqui para assistir no YouTube](https://youtu.be/ma0CJU2U-bs)
 
 ---
 
